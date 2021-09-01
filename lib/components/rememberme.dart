@@ -34,7 +34,7 @@ class LinkedLabelCheckbox extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'Lato',
                 fontWeight: FontWeight.bold,
-                color: Color(0xffff3a5a),
+                color: Colors.lightBlue,
               ),
               recognizer: TapGestureRecognizer()
                 ..onTap = () {

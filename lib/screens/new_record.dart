@@ -10,7 +10,7 @@ class NewRecordPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xffff3a5a),
+        backgroundColor: Colors.lightBlue,
         flexibleSpace: SafeArea(
           child: Container(
             // padding: EdgeInsets.only(top: 6),
@@ -90,6 +90,17 @@ class NewRecordPage extends StatelessWidget {
             padding: const EdgeInsets.all(.0),
             child: ListTile(
               title: Text("Miscellanous Record",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold
+                ),),
+              trailing: Icon(Icons.arrow_forward_ios, color: Colors.black, size: 20,),
+            ),
+          ),
+          RoundedContainer(
+            margin: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16),
+            padding: const EdgeInsets.all(.0),
+            child: ListTile(
+              title: Text("Plumbing Section",
                 style: TextStyle(
                     fontWeight: FontWeight.bold
                 ),),

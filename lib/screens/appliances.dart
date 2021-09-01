@@ -11,7 +11,7 @@ class AllAppliances extends StatelessWidget {
         appBar: AppBar(
           elevation: 1,
           automaticallyImplyLeading: false,
-          backgroundColor: Color(0xffff3a5a),
+          backgroundColor: Colors.lightBlue,
           flexibleSpace: SafeArea(
             child: Container(
               // padding: EdgeInsets.only(top: 6),
@@ -93,7 +93,7 @@ class AllAppliances extends StatelessWidget {
                                     height: 40,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.all(Radius.circular(20)),
-                                        color: Color(0xffff3a5a)),
+                                        color: Colors.lightBlue),
                                     child: FlatButton(
                                       child: Text(
                                         "Home",
@@ -117,7 +117,7 @@ class AllAppliances extends StatelessWidget {
                                     height: 40,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.all(Radius.circular(20)),
-                                        color: Color(0xffff3a5a)),
+                                        color: Colors.lightBlue),
                                     child: FlatButton(
                                       child: Text(
                                         "Next",
@@ -141,47 +141,47 @@ class AllAppliances extends StatelessWidget {
         ));
   }
 }
-class Item {
-  const Item(this.name);
-  final String name;
-// final Icon icon;
-}
-class DropdownScreen extends StatefulWidget {
-  State createState() =>  DropdownScreenState();
-}
-class DropdownScreenState extends State<DropdownScreen> {
-  Item selectedUser;
-  List<Item> users = <Item>[
-    const Item('Mr'),
-    const Item('Mrs'),
-    const Item('Miss'),
-    const Item('Ms'),
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return  DropdownButton<Item>(
-      hint:  Text("Title"),
-      value: selectedUser,
-      onChanged: (Item Value) {
-        setState(() {
-          selectedUser = Value;
-        });
-      },
-      items: users.map((Item user) {
-        return  DropdownMenuItem<Item>(
-          value: user,
-          child: Row(
-            children: <Widget>[
-              // user.icon,
-              // SizedBox(width: 10,),
-              Text(
-                user.name,
-                style:  TextStyle(color: Colors.black),
-              ),
-            ],
-          ),
-        );
-      }).toList(),
-    );
-  }
-}
+// class Item {
+//   const Item(this.name);
+//   final String name;
+// // final Icon icon;
+// }
+// class DropdownScreen extends StatefulWidget {
+//   State createState() =>  DropdownScreenState();
+// }
+// class DropdownScreenState extends State<DropdownScreen> {
+//   Item selectedUser;
+//   List<Item> users = <Item>[
+//     const Item('Mr'),
+//     const Item('Mrs'),
+//     const Item('Miss'),
+//     const Item('Ms'),
+//   ];
+//   @override
+//   Widget build(BuildContext context) {
+//     return  DropdownButton<Item>(
+//       hint:  Text("Title"),
+//       value: selectedUser,
+//       onChanged: (Item Value) {
+//         setState(() {
+//           selectedUser = Value;
+//         });
+//       },
+//       items: users.map((Item user) {
+//         return  DropdownMenuItem<Item>(
+//           value: user,
+//           child: Row(
+//             children: <Widget>[
+//               // user.icon,
+//               // SizedBox(width: 10,),
+//               Text(
+//                 user.name,
+//                 style:  TextStyle(color: Colors.black),
+//               ),
+//             ],
+//           ),
+//         );
+//       }).toList(),
+//     );
+//   }
+// }

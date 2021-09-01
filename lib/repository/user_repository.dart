@@ -6,9 +6,9 @@ import 'package:flutter/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 
-import 'package:living_byfaith/auth/AuthService.dart';
-import 'package:living_byfaith/model/sideBar.dart';
-import 'package:living_byfaith/model/userModel.dart';
+import 'package:cmra/services/AuthService.dart';
+
+import 'package:cmra/model/userModel.dart';
 
 
 
@@ -54,7 +54,6 @@ class UserRepository extends GetxController {
        AuthService().updateUserLastLogin(_fsUser);
       if(_fsUser!=null) {
         status(Status.Authenticated);
-        Get.off(SideBar());
       }
       else {
         _status = Status.Unauthenticated;
@@ -123,7 +122,6 @@ userModel.id=userCredential.user.uid;
     await  AuthService().saveUser(userModel);
       _error = '';
       status(Status.Authenticated);
-      Get.off(SideBar());
       return true;
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {

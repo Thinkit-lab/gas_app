@@ -1,5 +1,7 @@
 import 'package:cmra/components/rememberme.dart';
 import 'package:cmra/screens/homePage.dart';
+import 'package:cmra/screens/signup.dart';
+import 'package:get/get.dart';
 /**
  * Author: flutterdevguy
  * profile: https://github.com/thinkit-lab
@@ -15,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.lightBlue,
       body: ListView(
         children: <Widget>[
           Stack(
@@ -28,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 300,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: [Color(0x22ff3a5a), Color(0x22fe494d)])),
+                          colors: [Colors.blue.shade100, Colors.blue.shade100])),
                 ),
               ),
               ClipPath(
@@ -39,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 300,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: [Color(0x44ff3a5a), Color(0x44fe494d)])),
+                          colors: [Colors.blue.shade50, Colors.blue.shade100])),
                 ),
               ),
               ClipPath(
@@ -50,10 +52,17 @@ class _LoginPageState extends State<LoginPage> {
                       SizedBox(
                         height: 40,
                       ),
-                      Icon(
-                        Icons.fastfood,
-                        color: Colors.white,
-                        size: 60,
+                      // Icon(
+                      //   Icons.fastfood,
+                      //   color: Colors.white,
+                      //   size: 60,
+                      // ),
+                      Image(
+                        width: 60,
+                          height: 60,
+                          color: Colors.white,
+                          image: AssetImage('assets/images/fast-food.png'),
+
                       ),
                       SizedBox(
                         height: 20,
@@ -68,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
                             fontSize: 30),
                       ),
                       Text(
-                        "Faster.   Better.   More  Efficient.",
+                        "Quick  Gas  Certificate.",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Colors.white,
@@ -82,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 300,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
-                          colors: [Color(0xffff3a5a), Color(0xfffe494d)])),
+                          colors: [Colors.lightBlue, Colors.lightBlue])),
                 ),
               ),
             ],
@@ -97,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
               borderRadius: BorderRadius.all(Radius.circular(30)),
               child: TextField(
                 onChanged: (String value){},
-                cursorColor: Colors.deepOrange,
+                cursorColor: Colors.lightBlue,
                 decoration: InputDecoration(
                     hintText: "Email",
                     prefixIcon: Material(
@@ -105,7 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                       child: Icon(
                         Icons.email,
-                        color: Colors.red,
+                        color: Colors.lightBlue,
                       ),
                     ),
                     border: InputBorder.none,
@@ -124,7 +133,7 @@ class _LoginPageState extends State<LoginPage> {
               borderRadius: BorderRadius.all(Radius.circular(30)),
               child: TextField(
                 onChanged: (String value){},
-                cursorColor: Colors.deepOrange,
+                cursorColor: Colors.lightBlue,
                 decoration: InputDecoration(
                     hintText: "Password",
                     prefixIcon: Material(
@@ -132,7 +141,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.all(Radius.circular(30)),
                       child: Icon(
                         Icons.lock,
-                        color: Colors.red,
+                        color: Colors.lightBlue,
                       ),
                     ),
                     border: InputBorder.none,
@@ -154,7 +163,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(100)),
-                    color: Color(0xffff3a5a)),
+                    color: Colors.lightBlue),
                 child: FlatButton(
                   child: Text(
                     "LOGIN",
@@ -171,7 +180,7 @@ class _LoginPageState extends State<LoginPage> {
               )),
               SizedBox(height: 20,),
           Center(
-            child: Text("Forgot Your Password ?", style: TextStyle(color:Colors.red,fontSize: 12 ,fontWeight: FontWeight.w700),),
+            child: Text("Forgot Your Password ?", style: TextStyle(color:Colors.lightBlue,fontSize: 12 ,fontWeight: FontWeight.w700),),
           ),
           SizedBox(height: 20,),
           Padding(
@@ -179,7 +188,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(100)),
-                    color: Color(0xffff3a5a)),
+                    color: Colors.lightBlue),
                 child: FlatButton(
                   child: Text(
                     "REGISTER",
@@ -189,12 +198,14 @@ class _LoginPageState extends State<LoginPage> {
                         fontWeight: FontWeight.w700,
                         fontSize: 18),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>Body()));
+                  },
                 ),
               )),
           SizedBox(height: 20,),
           Center(
-            child: Text("v1.01 (16104)", style: TextStyle(color:Colors.red, fontFamily:'Lato',fontSize: 12 ,fontWeight: FontWeight.w700),),
+            child: Text("v1.01 (16104)", style: TextStyle(color:Colors.lightBlue, fontFamily:'Lato',fontSize: 12 ,fontWeight: FontWeight.w700),),
           ),
           SizedBox(height: 20,),
         ],

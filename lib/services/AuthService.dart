@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:living_byfaith/model/userModel.dart';
+import 'package:cmra/model/userModel.dart';
 
 class AuthService{
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:living_byfaith/utils/utils.dart';
+import 'package:cmra/utils/utils.dart';
 
-import '../constants.dart';
+
 
 
 class RoundedButton extends StatelessWidget {
@@ -13,7 +13,7 @@ class RoundedButton extends StatelessWidget {
     Key key,
     this.text,
     this.press,
-    this.color = kPrimaryColor,
+    this.color = Colors.lightBlue,
     this.textColor = Colors.white,
     this.isLoading=false
   }) : super(key: key);

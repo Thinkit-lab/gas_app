@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xffff3a5a),
+        backgroundColor: Colors.lightBlue,
         flexibleSpace: SafeArea(
           child: Container(
             // padding: EdgeInsets.only(top: 6),
@@ -187,7 +187,7 @@ class HomePage extends StatelessWidget {
             height: 20,
           ),
           RoundedContainer(
-            color: Colors.redAccent,
+            color: Colors.lightBlue,
             margin: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16),
             padding: const EdgeInsets.all(.0),
             child: Container(
@@ -211,7 +211,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Color(0xffff3a5a),
+        backgroundColor: Colors.blue,
         child: Icon(Icons.chat, color: Colors.white, size: 35,),
         onPressed: () {
         },

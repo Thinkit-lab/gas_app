@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
-
 
 class AlreadyHaveAnAccountCheck extends StatelessWidget {
   final bool login;
@@ -26,7 +24,7 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
           child: Text(
             login ? "Sign Up" : "Sign In",
             style: TextStyle(
-              color: kPrimaryColor,
+              color: Colors.lightBlue,
               fontWeight: FontWeight.bold,
             ),
           ),

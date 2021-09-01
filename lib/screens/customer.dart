@@ -11,7 +11,7 @@ class CustomerForm extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xffff3a5a),
+        backgroundColor: Colors.lightBlue,
         flexibleSpace: SafeArea(
           child: Container(
             // padding: EdgeInsets.only(top: 6),
@@ -82,7 +82,7 @@ class CustomerForm extends StatelessWidget {
                           // borderRadius: BorderRadius.all(Radius.circular(10)),
                       child: TextField(
                         onChanged: (String value){},
-                        cursorColor: Colors.deepOrange,
+                        cursorColor: Colors.lightBlue,
                         decoration: InputDecoration(
                             hintText: "First Name",
                             suffixIcon: Material(
@@ -109,7 +109,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Last Name",
                       suffixIcon: Material(
@@ -135,7 +135,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Company Name",
                       suffixIcon: Material(
@@ -156,13 +156,13 @@ class CustomerForm extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
-            color: Color(0xffff3a5a),
+            color: Colors.lightBlue,
             height: 3,
           ),
         ),
           RoundedContainer(
             height: 40.0,
-            color: Colors.redAccent,
+            color: Colors.lightBlue,
             margin: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8),
             padding: const EdgeInsets.all(.0),
             child: Container(
@@ -189,7 +189,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Building / House Number",
                       suffixIcon: Material(
@@ -215,7 +215,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Street",
                       suffixIcon: Material(
@@ -241,7 +241,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Town / City",
                       suffixIcon: Material(
@@ -267,7 +267,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Region",
                       suffixIcon: Material(
@@ -293,7 +293,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Postcode",
                       suffixIcon: Material(
@@ -314,7 +314,7 @@ class CustomerForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Color(0xffff3a5a),
+              color: Colors.lightBlue,
               height: 3,
             ),
           ),
@@ -326,7 +326,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Landline",
                       suffixIcon: Material(
@@ -352,7 +352,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Mobile",
                       suffixIcon: Material(
@@ -373,7 +373,7 @@ class CustomerForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Color(0xffff3a5a),
+              color: Colors.lightBlue,
               height: 3,
             ),
           ),
@@ -385,7 +385,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Primary Email",
                       suffixIcon: Material(
@@ -411,7 +411,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Secondary Email",
                       suffixIcon: Material(
@@ -432,7 +432,7 @@ class CustomerForm extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              color: Color(0xffff3a5a),
+              color: Colors.lightBlue,
               height: 3,
             ),
           ),
@@ -445,7 +445,7 @@ class CustomerForm extends StatelessWidget {
                 // borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: TextField(
                   onChanged: (String value){},
-                  cursorColor: Colors.deepOrange,
+                  cursorColor: Colors.lightBlue,
                   decoration: InputDecoration(
                       hintText: "Notes...",
                       suffixIcon: Material(
@@ -474,7 +474,7 @@ class CustomerForm extends StatelessWidget {
                     height: 40,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(20)),
-                        color: Color(0xffff3a5a)),
+                        color: Colors.lightBlue),
                     child: FlatButton(
                       child: Text(
                         "Home",
@@ -498,7 +498,7 @@ class CustomerForm extends StatelessWidget {
                     height: 40,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(20)),
-                        color: Color(0xffff3a5a)),
+                        color: Colors.lightBlue),
                     child: GestureDetector(
                       onTap: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>AllAppliances()));

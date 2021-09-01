@@ -10,7 +10,7 @@ class DomesticGasRecord extends StatelessWidget {
       appBar: AppBar(
         elevation: 1,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xffff3a5a),
+        backgroundColor: Colors.lightBlue,
         flexibleSpace: SafeArea(
           child: Container(
             // padding: EdgeInsets.only(top: 6),
@@ -120,7 +120,7 @@ class DomesticGasRecord extends StatelessWidget {
                 height: 40,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20)),
-                    color: Color(0xffff3a5a)),
+                    color: Colors.lightBlue),
                 child: FlatButton(
                   child: Text(
                     "Home",
