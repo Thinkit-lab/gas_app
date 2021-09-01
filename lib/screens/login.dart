@@ -16,7 +16,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return GetMaterialApp(
+    home:Scaffold(
       // backgroundColor: Colors.lightBlue,
       body: ListView(
         children: <Widget>[
@@ -174,7 +175,12 @@ class _LoginPageState extends State<LoginPage> {
                         fontSize: 18),
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                    Get.snackbar("Your LogIn status", 
+                    "Success",
+                    snackPosition: SnackPosition.BOTTOM,
+                    duration: Duration(milliseconds: 8000)
+                    );
+                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
                   },
                 ),
               )),
@@ -210,6 +216,7 @@ class _LoginPageState extends State<LoginPage> {
           SizedBox(height: 20,),
         ],
       ),
+    )
     );
   }
 }
