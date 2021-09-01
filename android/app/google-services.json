@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "789812798389",
+    "project_id": "gas-app-d86ce",
+    "storage_bucket": "gas-app-d86ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789812798389:android:196c95ca2f59a238886ffc",
+        "android_client_info": {
+          "package_name": "com.example.gas_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789812798389-jq95gtjoaltip3p2tt4tpcjlk7kl1g4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgZE2ragh3A5oP1f51M7ZRXPn1Ac_6QtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789812798389-jq95gtjoaltip3p2tt4tpcjlk7kl1g4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
